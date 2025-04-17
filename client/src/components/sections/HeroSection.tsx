@@ -1,61 +1,109 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, Mail, Linkedin, Phone } from "lucide-react";
+import { BackgroundGradients } from "@/components/ui/background-gradient";
+import DevOpsIcon from "@/components/icons/DevOpsIcon";
+import { Parallax } from "react-parallax";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10 dark:from-primary/30 dark:to-dark">
-      <div className="container mx-auto px-6">
+    <section id="home" className="py-24 relative overflow-hidden">
+      {/* Background Elements */}
+      <BackgroundGradients />
+      
+      <div className="absolute top-20 left-10 opacity-5 rotate-12">
+        <DevOpsIcon className="w-64 h-64" />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col-reverse md:flex-row items-center">
           <motion.div 
-            className="md:w-7/12 mt-10 md:mt-0 md:pr-10"
+            className="md:w-7/12 mt-12 md:mt-0 md:pr-10"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Akash Ragupathi
+            <div className="mb-6 inline-block">
+              <span className="bg-primary/10 dark:bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                AWS & Cloud Infrastructure Specialist
+              </span>
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Akash Ragupathi
+              </span>
             </h1>
+            
             <h2 className="text-2xl md:text-3xl font-medium text-secondary mb-6">
               DevOps Engineer
             </h2>
-            <p className="text-lg text-neutral-700 dark:text-neutral-200 mb-8 leading-relaxed">
-              DevOps Engineer with 4 years of AWS, On-premises infrastructure and banking sector
-              experience. Result-oriented performer in implementing high quality solutions that are scalable,
+            
+            <p className="text-lg text-neutral-700 dark:text-neutral-200 mb-8 leading-relaxed max-w-xl">
+              DevOps Engineer with 4+ years of experience in AWS, on-premises infrastructure and banking sector.
+              Result-oriented performer implementing high-quality solutions that are scalable,
               highly available and fault tolerant.
             </p>
+            
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-md">
                 <a href="#contact">Contact Me</a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary/10">
+              <Button asChild variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary/10 shadow-sm">
                 <a href="/attached_assets/AKASH%20Ragupathi.pdf" download>
                   Download CV <Download className="ml-2 h-4 w-4" />
                 </a>
               </Button>
             </div>
+            
             <div className="mt-8 flex items-center space-x-6">
-              <a href="mailto:akashragu0@gmail.com" className="text-neutral-600 dark:text-neutral-300 hover:text-primary transition-colors">
-                <i className="ri-mail-line text-xl"></i>
+              <a 
+                href="mailto:akashragu0@gmail.com" 
+                className="bg-neutral-100 dark:bg-neutral-800 p-3 rounded-full text-neutral-600 dark:text-neutral-300 hover:text-primary hover:bg-white dark:hover:bg-neutral-700 transition-all shadow-sm"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
               </a>
-              <a href="https://www.linkedin.com/in/akash-r-devops" target="_blank" rel="noopener noreferrer" className="text-neutral-600 dark:text-neutral-300 hover:text-primary transition-colors">
-                <i className="ri-linkedin-box-fill text-xl"></i>
+              <a 
+                href="https://www.linkedin.com/in/akash-r-devops" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-neutral-100 dark:bg-neutral-800 p-3 rounded-full text-neutral-600 dark:text-neutral-300 hover:text-primary hover:bg-white dark:hover:bg-neutral-700 transition-all shadow-sm"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
               </a>
-              <a href="tel:+353894917330" className="text-neutral-600 dark:text-neutral-300 hover:text-primary transition-colors">
-                <i className="ri-phone-line text-xl"></i>
+              <a 
+                href="tel:+353894917330" 
+                className="bg-neutral-100 dark:bg-neutral-800 p-3 rounded-full text-neutral-600 dark:text-neutral-300 hover:text-primary hover:bg-white dark:hover:bg-neutral-700 transition-all shadow-sm"
+                aria-label="Phone"
+              >
+                <Phone className="h-5 w-5" />
               </a>
             </div>
           </motion.div>
+          
           <motion.div 
             className="md:w-5/12 flex justify-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-secondary p-1">
-              <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                <div className="w-full h-full bg-neutral-200 flex items-center justify-center">
-                  <i className="ri-user-3-line text-7xl text-neutral-400"></i>
+            <div className="relative">
+              {/* Decorative background elements */}
+              <div className="absolute -left-6 -top-6 w-24 h-24 bg-primary/10 rounded-full blur-xl"></div>
+              <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-accent/10 rounded-full blur-xl"></div>
+              
+              {/* Profile image container */}
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-xl relative z-10">
+                <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                  <div className="w-full h-full bg-neutral-200 flex items-center justify-center">
+                    <div className="text-7xl text-neutral-400 bg-neutral-100 w-full h-full flex items-center justify-center">
+                      <svg viewBox="0 0 24 24" className="w-24 h-24 text-primary/50" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z"/>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
