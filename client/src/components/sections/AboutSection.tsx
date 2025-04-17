@@ -79,14 +79,6 @@ export default function AboutSection() {
                 </p>
               </div>
             </div>
-            
-            <div className="bg-gradient-to-r from-primary to-accent p-px rounded-lg shadow-xl">
-              <div className="bg-primary/10 dark:bg-primary/20 p-5 rounded-lg">
-                <p className="text-primary font-medium">
-                  Eligible to work as an intern under the Stamp 2 visa scheme without sponsorship between October 2024 and May 2025, with a view to securing a Graduate 1G visa in July 2025.
-                </p>
-              </div>
-            </div>
           </motion.div>
           
           <motion.div 
