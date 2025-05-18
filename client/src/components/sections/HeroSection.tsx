@@ -97,13 +97,11 @@ export default function HeroSection() {
               {/* Profile image container */}
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-xl relative z-10">
                 <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                  <div className="w-full h-full bg-neutral-200 flex items-center justify-center">
-                    <div className="text-7xl text-neutral-400 bg-neutral-100 w-full h-full flex items-center justify-center">
-                      <svg viewBox="0 0 24 24" className="w-24 h-24 text-primary/50" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z"/>
-                      </svg>
-                    </div>
-                  </div>
+                  <img 
+                    src="/attached_assets/IMG_0427.jpeg" 
+                    alt="Akash Ragupathi" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
