@@ -98,7 +98,7 @@ export default function HeroSection() {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-xl relative z-10">
                 <div className="w-full h-full rounded-full overflow-hidden bg-white">
                   <img 
-                    src="/attached_assets/IMG_0427.jpeg" 
+                    src="/assets/IMG_0427.jpeg" 
                     alt="Akash Ragupathi" 
                     className="w-full h-full object-cover"
                   />
