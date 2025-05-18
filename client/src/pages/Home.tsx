@@ -3,7 +3,6 @@ import AboutSection from "@/components/sections/AboutSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import EducationSection from "@/components/sections/EducationSection";
-import CertificationsSection from "@/components/sections/CertificationsSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <ExperienceSection />
       <SkillsSection />
       <EducationSection />
-      <CertificationsSection />
       <ContactSection />
     </main>
   );
