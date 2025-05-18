@@ -10,7 +10,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { apiRequest } from "@/lib/queryClient";
-import { Download, Mail, Phone, Linkedin, Send, FileText } from "lucide-react";
+import { Download, Mail, Phone, Linkedin, Send, FileText, Github } from "lucide-react";
 import { BackgroundGradients } from "@/components/ui/background-gradient";
 import CodeIcon from "@/components/icons/CodeIcon";
 
@@ -148,6 +148,23 @@ export default function ContactSection() {
                           className="text-primary hover:text-accent transition-all font-medium"
                         >
                           linkedin.com/in/akash-r-devops
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start p-4 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-700/50 transition-colors">
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center shadow-sm mr-4">
+                        <Github className="text-xl text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-neutral-700 dark:text-neutral-200">GitHub</h4>
+                        <a 
+                          href="https://github.com/AkashRagu" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-primary hover:text-accent transition-all font-medium"
+                        >
+                          github.com/AkashRagu
                         </a>
                       </div>
                     </div>
