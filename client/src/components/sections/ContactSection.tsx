@@ -188,14 +188,21 @@ export default function ContactSection() {
                       <p className="text-neutral-600 dark:text-neutral-300 mb-4">
                         Download my full resume to learn more about my experience, skills, and qualifications.
                       </p>
-                      <Button 
-                        asChild 
-                        className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-md"
-                      >
-                        <a href="/attached_assets/AKASH%20Ragupathi.pdf" download>
-                          Download CV <Download className="ml-2 h-4 w-4" />
-                        </a>
-                      </Button>
+                      <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-2 border-primary text-primary hover:bg-primary/10 shadow-sm"
+              >
+                <a
+                  href="http://portfolio.akash-r.com/Akash_Ragupathi_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+              >
+                  Download CV <Download className="ml-2 h-4 w-4" />
+                  </a>
+              </Button>
                     </div>
                   </div>
                 </CardContent>

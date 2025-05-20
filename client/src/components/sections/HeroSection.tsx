@@ -46,13 +46,20 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-md">
-                <a href="#contact">Contact Me</a>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary/10 shadow-sm">
-                <a href="/attached_assets/AKASH%20Ragupathi.pdf" download>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-2 border-primary text-primary hover:bg-primary/10 shadow-sm"
+              >
+                <a
+                  href="http://portfolio.akash-r.com/Akash_Ragupathi_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+              >
                   Download CV <Download className="ml-2 h-4 w-4" />
-                </a>
+                  </a>
               </Button>
             </div>
             
